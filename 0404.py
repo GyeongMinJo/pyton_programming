@@ -171,6 +171,8 @@ while True:
             print("continue를 실행함")
             continue
         
-        print(str,"을 입력하셨습니다.")
+        print(str,str,str,"을 입력하셨습니다.")
     print("저는 아직 while 안에 있어요.")
 print("while 종료")
+#그외에 단어를 입력받으면 해당 단어를 3번찍어줄것
+#continue , break 활용 해본다.
