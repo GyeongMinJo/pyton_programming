@@ -154,3 +154,23 @@ else:
 #for while 둘다 사용
 #continue는 n차시중 만나면 n+1 차시를 하는거
 #break는 n차시중에 그냥 나가는거 
+
+#input으로 입력을 받는데,
+#무한반복.
+#exit이라는 값을 받으면 ,입력받는 것을 종료
+ 
+#apple을 받으면,넌 이단어를 입려했다.를 출력하지않게하기
+while True:
+    str=input("단어를입력하시오.")
+    if str == 'exit' :
+        print("exit 을 입력하여 종료합니다.")
+        break
+    else :
+        if str=='apple':
+            print("apple을 입력받았음")
+            print("continue를 실행함")
+            continue
+        
+        print(str,"을 입력하셨습니다.")
+    print("저는 아직 while 안에 있어요.")
+print("while 종료")
