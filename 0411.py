@@ -86,7 +86,7 @@ print(list3)
 '''
 
 
-'''
+
 #list insert
 food=[]
 food.append("짜장면")
@@ -96,7 +96,7 @@ food.insert(0,"파스타")
 print(food)
 food.insert(2,"제육")
 print(food)
-
+'''
 food.remove("제육")
 print(food)
 
@@ -154,21 +154,56 @@ for i in range(11) :
 print(l3)
 '''
 
+
+'''
 #3)
 #리스트 변수명 = [i for i in range()]
 
-#l4 = [i for i in range(11)] # [0,1,2,3,....]
-#print(l4)
+l4 = [i for i in range(11)] # [0,1,2,3,....]
+print(l4)
 
 #10
 #0~10 까지 숫자의 제곱을 원소로 가지는 리스트를 작성하라
-#l5 = [i**2 for i in range(11)] # [0,1,2,3,....]
-#print(l5)
+l5 = [i**2 for i in range(11)] # [0,1,2,3,....]
+print(l5)
 
 #11
-#l6 = [i*3 for i in range(11)] # [0,1,2,3,....]
-#print(l6)
+l6 = [i*3 for i in range(11)] # [0,1,2,3,....]
+print(l6)
+
 #13
-l7 = []
 l7 = ["hellow" for i in range(10)] # [0,1,2,3,....]
 print(l7)
+
+#0~10 까지의 숫자와 제곱을 리스트로 만들어라.
+#짝수의 제곱만 넣어라
+l8 = [i**2  for i in range(11)  if i%2==0]
+print(l8)
+
+'''
+print(food)
+wishlist = food
+print("wishlist : ",wishlist)
+food.pop()
+print("affter food.pop()")
+print("food     :",food)
+print("wishlist : ",wishlist)
+
+print(food is wishlist)
+
+
+#deep copy
+food2 =food[:]
+food3 = list(food)
+
+print("deep copy")
+print("food     :",food)
+print("food2    : ",food2)
+print(food is food2)
+food2.append("김밥")
+print("food     :",food)
+print("food2    : ",food2)
+food.append("라볶이")
+print("food     :",food)
+print("food2    : ",food2)
+print("wishlist : ",wishlist)
