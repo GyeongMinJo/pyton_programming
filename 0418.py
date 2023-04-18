@@ -1,5 +1,6 @@
 #0418 python 수업 1교시
 #튜플 , 딕셔너리 , 집합
+'''
 lst = []
 # 수정, 변경, 일부 원소 삭제 가능
 
@@ -129,7 +130,7 @@ l100 = list(zip('ABCD',l10,l11,l12))
 for i in l100 : 
     print(i[0],i[1], i[2],i[3])
 
-
+'''
 
 
 '''
@@ -143,7 +144,7 @@ for i in l100 :
 
 '''
 
-
+'''
 #zip list1, list2 => list 3
 #a,b
 #[(a1,b1),(a2,b2)]
@@ -162,3 +163,31 @@ print(dict(zip(l10,zip(l11,l12))))
 
 print(list(enumerate(l11)))
 print(dict(enumerate(l11)))
+'''
+
+lecture = ['파이썬','c++','IOT','웹프런트','DB']
+space = [101,102,103,104,105]
+
+dic = dict(zip(lecture,space))
+'''
+for i in True :
+    c = input("강의명")
+    if c == quit :
+        break
+    else :
+        if c == dic[0]:
+           print(dic[1])
+        else :
+            continue 
+'''
+    
+while True:
+    c = input("강의명을 쓰세요")
+    if c == "quit" :
+        print("quit을 입력했으니, 종료합니다")
+        break
+    else :
+        if c in dic.keys():
+            print(dic[c])
+        else:
+            continue
